@@ -1,4 +1,5 @@
 
+// TC: O(n²)
 class majority {
 
     public static int majorityElementBrute(int[] arr) {
