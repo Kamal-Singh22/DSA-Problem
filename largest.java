@@ -1,4 +1,4 @@
-//one approache is sort the array and then return the last index element which is largest number.
+//1. one approache is sort the array and then return the last index element which is largest number.
 
 class largest {
 
@@ -10,10 +10,8 @@ class largest {
             if (arr[i] > largestNum) {
                 largestNum = arr[i];
             }
-
         }
         return largestNum;
-
     }
 
     public static void main(String[] args) {

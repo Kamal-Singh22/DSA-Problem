@@ -13,7 +13,6 @@ public class bubbleSort {
                     arr[j + 1] = temp;
                 }
             }
-
         }
     }
 
