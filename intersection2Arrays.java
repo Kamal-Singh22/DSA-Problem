@@ -33,3 +33,34 @@ class intersection2Arrays {
         System.out.println(intersectionBrute(arr1, arr2)); // [2, 3]
     }
 }
+
+// //Optimal
+// import java.util.*;
+// class ArrayIntersection {
+//     public static List<Integer> findArrayIntersection(int[] A, int[] B) {
+//         int n = A.length;
+//         int m = B.length;
+//         int i = 0;
+//         int j = 0;
+//         List<Integer> ans = new ArrayList<>();
+//         while (i < n && j < m) {
+//             if (A[i] < B[j]) {
+//                 i++;
+//             } 
+//             else if (B[j] < A[i]) {
+//                 j++;
+//             } 
+//             else {  // A[i] == B[j]
+//                 ans.add(A[i]);
+//                 i++;
+//                 j++;
+//             }
+//         }
+//         return ans;
+//     }
+//     public static void main(String[] args) {
+//         int[] A = {1, 2, 2, 3, 4, 5};
+//         int[] B = {2, 2, 3, 3, 6};
+//         System.out.println(findArrayIntersection(A, B)); // Output: [2, 2, 3]
+//     }
+// }
