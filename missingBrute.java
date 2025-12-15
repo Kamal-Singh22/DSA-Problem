@@ -1,27 +1,29 @@
 
-// class missingBrute {
-//     public static int findMissing(int arr[]) {
-//         int n = arr.length + 1;
-//         for (int i = 1; i <= n; i++) {
-//             int flag = 0;
-//             for (int j = 0; j < n - 1; j++) {
-//                 if (arr[j] == i) {
-//                     flag = 1;
-//                     break;
-//                 }
-//             }
-//             if (flag != 1) {
-//                 return i;
-//             }
-//         }
-//         return -1;
-//     }
-//     public static void main(String[] args) {
-//         int arr[] = {1, 2, 3, 5};
-//         System.out.print(findMissing(arr));
-//     }
-// }
-//********************* */
+class missingBrute {
+
+    public static int findMissing(int arr[]) {
+        int n = arr.length + 1;
+        for (int i = 1; i <= n; i++) {
+            int flag = 0;
+            for (int j = 0; j < n - 1; j++) {
+                if (arr[j] == i) {
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag != 1) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {1, 2, 3, 5};
+        System.out.print(findMissing(arr));
+    }
+}
+// ********************* */
 // //Better solution:
 // import java.util.HashMap;
 // class MissingNumberHashMap {
@@ -46,24 +48,22 @@
 //     }
 // }
 //Optimal Solution:
-class missingBrute {
+// class missingBrute {
 
-    public static int findMissing(int arr[]) {
-        int n = arr.length + 1;
-        int totalSum = n * (n + 1) / 2;
-        int arrSum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            arrSum += arr[i];
-        }
-        return totalSum - arrSum;
-    }
-
-    public static void main(String[] args) {
-        int arr[] = {1, 2, 3, 5};
-        System.out.println(findMissing(arr));
-    }
-}
-
+//     public static int findMissing(int arr[]) {
+//         int n = arr.length + 1;
+//         int totalSum = n * (n + 1) / 2;
+//         int arrSum = 0;
+//         for (int i = 0; i < arr.length; i++) {
+//             arrSum += arr[i];
+//         }
+//         return totalSum - arrSum;
+//     }
+//     public static void main(String[] args) {
+//         int arr[] = {1, 2, 3, 5};
+//         System.out.println(findMissing(arr));
+//     }
+// }
 // //Best Optimal
 // class MissingNumberXOR {
 //     public static int missingNumber(int[] arr, int N) {
