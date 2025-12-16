@@ -1,4 +1,6 @@
 
+//find the number that occur once and other occure twice 
+//Optimal solution:
 class oneOcc {
 
     public static int singleOccurance(int arr[]) {
@@ -15,3 +17,5 @@ class oneOcc {
         System.out.println(singleOccurance(arr));
     }
 }
+
+//Brute force approach:
