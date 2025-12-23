@@ -4,7 +4,7 @@ class largest {
 
     public static int largestNumber(int arr[]) {
         int n = arr.length;
-        int largestNum = arr[0];
+        int largestNum = arr[0];  //int largestNum = 0; only if the numbers are positive:
         for (int i = 0; i < n; i++) {
 
             if (arr[i] > largestNum) {

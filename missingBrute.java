@@ -28,7 +28,7 @@ class missingBrute {
 // import java.util.HashMap;
 // class MissingNumberHashMap {
 //     public static int findMissing(int[] arr) {
-//         int n = arr.length + 1; // because one number is missing
+//         int n = arr.length + 1;   // because one number is missing
 //         HashMap<Integer, Boolean> map = new HashMap<>();
 //         // Step 1: put all array elements into the map
 //         for (int num : arr) {

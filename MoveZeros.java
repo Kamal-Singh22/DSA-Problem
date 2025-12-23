@@ -36,7 +36,7 @@ class MoveZeros {
             for (int j = n - 1; j >= i; j--) {
                 if (arr[i] != 0 && arr[j] == 0) {
                     i++;
-                    j++;
+                    j--;
                 } else {
                     int temp = arr[i];
                     arr[i] = arr[j];
