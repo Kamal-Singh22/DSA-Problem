@@ -6,7 +6,6 @@ class merge2arrays {
     public static void merge(int[] arr1, int[] arr2) {
         int n = arr1.length, m = arr2.length;
         int i = n - 1, j = 0;
-
         while (i >= 0 && j < m) {
             if (arr1[i] > arr2[j]) {
                 int temp = arr1[i];
@@ -18,7 +17,6 @@ class merge2arrays {
                 break;
             }
         }
-
         Arrays.sort(arr1);
         Arrays.sort(arr2);
     }
