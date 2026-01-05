@@ -1,5 +1,6 @@
-
+//Brute Force
 // TC: O(n²)
+
 class majority {
 
     public static int majorityElementBrute(int[] arr) {
@@ -27,3 +28,9 @@ class majority {
         System.out.println(majorityElementBrute(arr));
     }
 }
+
+// Better solution : Hash Map
+
+
+
+//Optimal Solution: Most Voting Algo
