@@ -8,7 +8,7 @@ class twoSum {
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (nums[i] + nums[j] == target) {
-                    // return new int[]{i, j};//return the index of the array
+                    // return new int[]{i, j};  //return the index of the array
                     return new int[]{nums[i], nums[j]}; //rerurn the value of the index
                 }
             }
