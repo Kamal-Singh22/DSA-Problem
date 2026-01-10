@@ -28,3 +28,34 @@ class removeDuplicate {
         System.out.println("Unique:   " + Arrays.toString(removeDuplicates(arr1)));
     }
 }
+
+//moste optimal space complexity: O(1) TC O(N):
+class removeDuplicateOptimized {
+
+    public static int removeDuplicates(int[] arr) {
+        int n = arr.length;
+        if (n == 0) {
+            return 0;
+        }
+
+        int index = 1;
+        for (int i = 1; i < n; i++) {
+            if (arr[i] != arr[i - 1]) {
+                arr[index] = arr[i];
+                index++;
+            }
+        }
+        return index;  // new length of unique array
+    }
+
+    public static void main(String[] args) {
+        int arr[] = {2, 2, 2, 2, 2};
+
+        int k = removeDuplicates(arr);
+        System.out.println("New length = " + k);
+        System.out.print("Unique values: ");
+        for (int i = 0; i < k; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
