@@ -1,5 +1,5 @@
 
-//Brute force TC O(n): Unsorted arrays:
+//====================Brute force TC O(n): Unsorted arrays:============================
 // import java.util.Arrays;
 // class two2sum {
 //     public static int[] targetsum(int arr[], int target) {
@@ -19,7 +19,7 @@
 //         System.out.println(Arrays.toString(targetsum(arr, target)));
 //     }
 // }
-//Optimal Solution TC: O(n)
+//===============Optimal Solution TC: O(n)===================
 // import java.util.*;
 // class Solution {
 //     public int[] twoSum(int[] nums, int target) {
@@ -42,7 +42,7 @@
 //         System.out.println(Arrays.toString(res));
 //     }
 // }
-//======If the array is not sorted then we can use two pointer approach:
+//======If the array is not sorted then we can use two pointer approach:==========
 import java.util.Arrays;
 
 class two2sum {
