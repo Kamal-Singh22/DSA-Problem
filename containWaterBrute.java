@@ -1,7 +1,7 @@
 //Containing most water:
 //Brute Force
 
-class Main {
+class containWaterBrute {
 
     public static int Max(int height[]) {
         int n = height.length;

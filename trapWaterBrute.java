@@ -1,5 +1,5 @@
 
-class Main {
+class trapWaterBrute {
 
     public static int maxWater(int arr[]) {
         int n = arr.length;

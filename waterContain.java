@@ -1,16 +1,16 @@
 //Optimal Two Pointer Approach:
 
-class Main {
+class waterContain {
 
     public static int maxwater(int hight[]) {
         int left = 0;
         int n = hight.length;
         int right = n - 1;
-        int maxw = 0;
+        int maxwater = 0;
         while (left < right) {
             int h = Math.min(hight[left], hight[right]);
             int w = right - left;
-            maxw = Math.max(maxw, h * w);
+            maxwater = Math.max(maxwater, h * w);
 
             if (hight[left] < hight[right]) {
                 left++;
@@ -18,7 +18,7 @@ class Main {
                 right--;
             }
         }
-        return maxw;
+        return maxwater;
     }
 
     public static void main(String[] asdf) {
