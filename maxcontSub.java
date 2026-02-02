@@ -2,7 +2,7 @@
 
 import java.util.Arrays;
 
-class Main {
+class maxconstSub {
 
     public static int[] maxSubarrayBruteForce(int[] arr, int k) {
         int n = arr.length;

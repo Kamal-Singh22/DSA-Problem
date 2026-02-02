@@ -1,5 +1,5 @@
 
-class Main {
+class maxlencont01 {
 
     // Brute-force: O(n^2) time, O(1) space
     public static int maxsub(int[] arr) {
@@ -25,7 +25,7 @@ class Main {
     }
 
     public static void main(String[] args) {
-        int[] arr = {0, 0, 1, 1, 1, 1, 0, 1, 1, 0};
+        int[] arr = {0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0};
         System.out.println(maxsub(arr)); // Should print 8
     }
 }
